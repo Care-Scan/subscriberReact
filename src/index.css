@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  body {
+    /* margin: 40px; */
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+  }
+  
+  .split-screen {
+    flex: 1;
+    margin: 0 auto;
+    /* min-height: 100vh; */
+    padding: 3em;
+  }
+  
+  .split-screen h1 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  
+  .img-area {
+    background: #e9fff6;
+    color: teal;
+  }
+  
+  .img-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border: teal 1px solid;
+    border-radius: 3%;
+    height: 80vh;
+  
+  }
+  
+  .img-holder img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .edit-area {
+    background: teal;
+    color: #e9fff6;
+    min-height: 100vh;
+  }
+  
+  .edit-area form {
+    width: 90%;
+    margin: 0 auto;
+  
+    border: #e9fff6 1px solid;
+    border-radius: 3%;
+  
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+  
+  .form-list li {
+    display: flex;
+    padding: 1.5em;
+    justify-content: flex-end;
+  }
+  
+  .form-list>li>label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  
+  .form-list>li>input,
+  textarea,
+  select {
+    padding: .5em;
+    flex: 2;
+  }
+  
+  /* custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #e9fff6;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #f5fed1;
+  }
+  
