@@ -63,7 +63,7 @@ export default function EditArea() {
             <textarea rows="3" id="diabetes-details" placeholder="Diabetes Details"></textarea>
           </li>
           <li>
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-lightblue btn-animate">Submit</button>
           </li>
         </ul>
       </form>
