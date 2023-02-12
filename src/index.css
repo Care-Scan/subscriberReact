@@ -104,3 +104,21 @@
     background-color: #f5fed1;
   }
   
+  @media only screen and (max-width: 1024px) {
+    .container {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .container {
+      display: block;
+    }
+    .form-list li {
+      display: block;
+    }
+
+    .form-list label {
+      display: block;
+    }
+  }
