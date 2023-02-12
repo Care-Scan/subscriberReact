@@ -5,7 +5,7 @@ export default function ImageArea() {
     <div className="img-area split-screen">
       <h1>Patient Handwritten Form</h1>
       <div className="img-holder">
-        <img src="../images/sampleimg.jpg" alt="sampleimg" />
+        <img src="http://localhost:3001/test.png" alt="sampleimg" />
       </div>
     </div>
   )

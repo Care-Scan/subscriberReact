@@ -1,9 +1,16 @@
 import React from "react";
 
 export default function EditArea() {
+  const [data, setData] = React.useState("state");
+  React.useEffect(() => {
+    fetch("http://localhost:3001/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
   return (
     <div className="edit-area split-screen">
-      <h1>Patient Intake Form</h1>
+      <h1>{data}</h1>
       <form>
         <ul className="form-list">
           <li>
@@ -45,11 +52,11 @@ export default function EditArea() {
           </li>
           <li>
             <label htmlFor="diabetes">Diabetes</label>
-            <select id="diabetes">
+            {/* <select id="diabetes">
               <option value="" selected="selected"> </option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
-            </select>
+            </select> */}
           </li>
           <li>
             <label htmlFor="diabetes-details">Family Memeber and Age at Diagnosis</label>
